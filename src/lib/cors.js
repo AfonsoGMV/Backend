@@ -5,7 +5,7 @@ export function allowCors(handler) {
       ? process.env.CORS_ALLOWED_ORIGINS_REMOTE.split(",")
       : [];
 
-    const origin = req.headers.origin || "";
+    const origin = req.headers.origin || "https://frontend-navy-eight-84.vercel.app";
     const userAgent = req.headers["user-agent"] || "";
 
     // ✅ Verifica se o Postman está permitido via .env
